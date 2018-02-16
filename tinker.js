@@ -30,7 +30,6 @@ require('csv-to-array')({
         if (isUrl(source)) {
             ogs({'url': source, 'timeout': 10000}, function (error, results) {
                 if (results['success'] == true) {
-                    console.log('dasdfasdf');
                     console.log(source);
                     console.log('Title: ' + results['data']['ogTitle']);
                     console.log('Description: ' + results['data']['ogDescription']);
